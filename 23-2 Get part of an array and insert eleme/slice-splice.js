@@ -46,7 +46,7 @@ Index 4 = 'fig'
 
 Visual Representation:
 
-Index	Element
+Index:	Element:
 0	    'apple'
 1	    'banana'
 2	    'cherry'
@@ -116,7 +116,7 @@ Index 2 = 'green'
 
 Visual Representation:
 
-Before Splice	After Splice (Insert at index 1)
+Before Splice:	After Splice (Insert at index 1):
 'red'	            'red'
 'blue'	            'yellow'
 'green'	            'purple'
@@ -161,7 +161,7 @@ Step-by-Step Breakdown:
 
 Visual Representation:
 
-Before Splice	After Splice (Removing elements at index 2, 2 elements)
+Before Splice:	    After Splice (Removing elements at index 2, 2 elements):
 1	                1
 2	                2
 3	                — (removed)
@@ -201,7 +201,7 @@ Step-by-Step Breakdown:
 
 Visual Representation:
 
-Before Splice	        After Splice (Replace 'dog' with 'fox')
+Before Splice:	            After Splice (Replace 'dog' with 'fox'):
 'cat'	                    'cat'
 'dog'	                    'fox'
 'rabbit'                    'rabbit'
