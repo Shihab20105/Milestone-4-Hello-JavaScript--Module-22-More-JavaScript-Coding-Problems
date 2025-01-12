@@ -289,4 +289,47 @@ Key Points to Remember:
 * 'i % 5 === 0': This checks if a number is divisible by 5.
 * '+=': This operator is used to append to the string 'output'. It adds "foo" or "bar" depending on the divisibility condition.
 * 'console.log(output || i)': This prints the output string (if it's not empty) or the number 'i' (if 'output' is empty).
+
+
+
+
+
+** Here's the same logic using a while loop:
+
+let i = 1;  // Initialize the counter
+
+while (i <= 100) {
+  let output = '';  // Initialize an empty string for each iteration
+  
+  if (i % 3 === 0) {
+    output += 'foo';  // Add "foo" if the number is divisible by 3
+  }
+  
+  if (i % 5 === 0) {
+    output += 'bar';  // Add "bar" if the number is divisible by 5
+  }
+  
+  console.log(output || i);  // Print "output" if it's not empty, otherwise print the number
+  
+  i++;  // Increment the counter
+}
+This version uses a 'while' loop instead of a 'for' loop to iterate from 1 to 100, performing the same checks and outputs.
+
+
+
+** Here's a shorter version using a 'while' loop with a direct 'console.log' statement:
+
+let i = 1;
+
+while (i <= 100) {
+  console.log((i % 3 ? '' : 'foo') + (i % 5 ? '' : 'bar') || i);
+  i++;
+}
+
+Explanation:
+
+* '(i % 3 ? '' : 'foo')': Returns "foo" if 'i' is divisible by 3, otherwise returns an empty string.
+* '(i % 5 ? '' : 'bar')': Returns "bar" if 'i' is divisible by 5, otherwise returns an empty string.
+* The '+' concatenates the results of both checks.
+* '|| i' outputs 'i' if the result of the concatenation is an empty string.
 */
